@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {font-family:'Noto Sans KR', sans-serif;background:#f5f6f7}
+
+input:focus {outline:dashed 1px #888}
+input[type="text"],
+input[type="password"] {font-family:'Noto Sans KR', sans-serif;width:350px;height:23px;padding:10px;border:1px solid #b5b5b5;border-right-color:#d4d4d4;border-bottom-color:#d4d4d4}
+input[type="button"],
+input[type="submit"] {width:100px;height:45px;outline:none;cursor:pointer;font-family:'Noto Sans KR', sans-serif;}
+
+@keyframes move {
+	0% {left:0}
+	50% {left:20px}
+	100% {left:0}
+}
+
+#register {width:100%;margin-top:100px;margin-bottom:50px}
+#register .wrap {position:relative;width:372px;margin:0 auto}
+#register .logo {text-align:center;margin-bottom:50px}
+#register .inp_small {width:249px;float:left}
+#register .btn_small {color:#444;background:#c9c9c9;border:1px solid #ababab;border-bottom:2px solid #ababab}
+#register .btn_small2 {color:#FFF;background:#e34f4f;border:1px solid #b82a2a;border-bottom:2px solid #b82a2a}
+#register .btn_submit {width:371px;margin-top:10px;color:#FFF;font-weight:bold;font-size:16px;background:#9062f5;border:1px solid #6f45cc;border-bottom:3px solid #6f45cc}
+#register [id^="msg_"] {display:none;margin:10px 0;font-size:12px;position:relative;animation-name:move;animation-duration:2s;animation-iteration-count:infinite}

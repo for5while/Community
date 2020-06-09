@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* ============================ 일반 게시판 ============================ */
+/* write */
+#board .write {width:100%}
+#board .write label {position:relative;top:-2px;cursor:pointer;font-size:12px}
+#board .write textarea {resize:none;outline:none}
+#board .write input[type=file] {cursor:pointer}
+#board .write .note-frame {font-size:14px}
+
+#board .write .options {height:25px}
+#board .write .options .checkbox {height:30px;vertical-align:middle;position:relative;top:-1px}
+#board .write .password {display:none;width:100px;padding:5px;margin-left:7px}
+#board .write .subject {width:100%;padding:10px;margin:15px 0}
+#board .write .content {width:100%;padding:10px;margin-top:-8px}
+
+#board .write .upload {width:auto;background:#FFF;padding:10px;margin-top:15px;border:1px solid #b5b5b5;border-right-color:#d4d4d4;border-bottom-color:#d4d4d4}
+#board .write .upload span {font-size:13px;color:#f05b5b}
+#board .write .click {text-align:center;margin-top:20px}
+#board .write .btn {padding:8px}
+#board .write .btn_cancle {width:60px;margin-right:5px;color:#444;background:#c9c9c9;border:1px solid #ababab;border-bottom:2px solid #ababab}
+#board .write .btn_write {color:#FFF;background:#9062f5;border:1px solid #6f45cc;border-bottom:2px solid #6f45cc}
+
+@keyframes hover {
+	100% {background:#f7f7f7}
+}
+
+/* list */
+#board table {width:100%;border-bottom:2px solid #e8e8e8}
+#board .list .count {margin:0 0 10px 10px;font-size:12px;color:#555;letter-spacing:-0.5px}
+#board .list .count .material-icons {position:relative;bottom:-6px;font-size:19px;margin-right:5px;color:#4985ba}
+#board .list .empty_table {margin:0;padding:80px 0;text-align:center;user-select:none}
+#board .list thead tr {height:35px;background:#efefef;border:1px solid #e8e8e8;border-top:2px solid #e8e8e8;letter-spacing:-1px;font-size:13px;color:#555}
+#board .list thead tr .writer {padding-left:10px}
+#board .list tbody tr {height:35px;background:#FFF;border:1px solid #e8e8e8;font-size:12.5px;color:#333;text-align:center}
+#board .list tbody tr.on {background:#fffef2 !important}
+#board .list tbody tr:hover {background:#f7f7f7;transition-duration:0.2s}
+#board .list tbody tr:not(:hover) {background:#FFF;transition-duration:0.2s}
+#board .list .left {text-align:left}
+#board .list .num {width:40px;font-family:'tahoma';font-size:8pt;color:#777}
+#board .list .recommend {width:40px;font-family:'tahoma';font-size:8pt;background:#f7f7f7;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;color:#777}
+#board .list .recommend .good {color:#466fb8;font-weight:bold}
+#board .list .recommend .nogood {color:#e05a5a;font-weight:bold}
+#board .list .nick {width:90px;line-height:35px;padding-left:10px;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#board .list .subject {width:501px}
+#board .list .subject a {width:100%;display:block;padding:6px 0;position:relative;bottom:-2px}
+#board .list .subject a .hover_underline {display:inline-block;max-width:410px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+#board .list .subject a:hover .hover_underline {color:#626dff;text-decoration:underline;transition-duration:0.2s}
+#board .list .subject a:not(:hover) .hover_underline {color:#000;text-decoration:none;transition-duration:0.4s}
+#board .list .subject .co_count {text-decoration:none !important;position:relative;top:-1px;padding-left:5px;color:#de5018;font-family:'Verdana';font-size:10px;letter-spacing:-1px}
+#board .list .subject .after_subject {position:relative;top:-4px}
+#board .list .subject .ico_new {background:url('../img/sprites_board_ico.png') no-repeat;overflow:hidden;text-indent:-9999px;display:inline-block;width:16px;height:8px;margin-left:5px}
+#board .list .subject .ico_write {background:url('../img/sprites_board_ico.png') 0 -63px no-repeat;overflow:hidden;text-indent:-9999px;display:inline-block;width:9px;height:14px;margin-right:5px}
+#board .list .subject .ico_secret {background:url('../img/sprites_board_ico.png') 0 -82px no-repeat;overflow:hidden;text-indent:-9999px;display:inline-block;width:9px;height:14px;margin-right:5px}
+#board .list .subject .ico_img {background:url('../img/sprites_board_ico.png') 0 -40px no-repeat;overflow:hidden;text-indent:-9999px;display:inline-block;width:16px;height:13px;margin-left:5px;position:relative;bottom:-2px}
+#board .list .hit {width:50px;font-family:'tahoma';font-size:8pt;color:#777}
+#board .list .date {width:60px;font-family:'tahoma';font-size:8pt;color:#777}
+#board .list .foot {margin-top:15px}
+#board .list .foot .search {float:left}
+#board .list .foot .search select {width:80px}
+#board .list .foot .keyword {float:left;padding:3px 0 4px 7px;margin-left:4px}
+#board .list .foot button {margin-left:-1px;background:#c9c9c9;border:1px solid #ababab;border-bottom-width:3px}
+#board .list .foot .material-icons {font-size:22px;text-shadow:1px 1px #dadada;color:#888}
+#board .list .foot .btn {float:right}
+#board .list .foot .btn .btn_write {width:100px;height:30px;color:#FFF;font-size:13px;background:#9062f5;border:1px solid #6f45cc;border-bottom-width:3px}
+#board .list .paging {margin-top:60px;text-align:center}
+#board .list .paging a {width:25px;display:inline-block;font-size:14px;letter-spacing:-1px;color:#333}
+#board .list .paging a:hover {font-weight:bold}
+#board .list .paging span a {font-size:20px;font-weight:bold;color:#f54245}
+#board .list .paging .material-icons {position:relative;bottom:-7px;color:#555;}
+
+/* view_download */
+#board .view_download table {width:100%;border-collapse:collapse;border-spacing:inherit}
+#board .view_download a {font-size:13px}
+#board .view_download td {background:#FFF;padding:5px;border:1px solid #DDD}
+#board .view_download table td:hover {background:#ead4ff}
+
+/* view */
+#board .view {margin-bottom:40px}
+#board .view .note-frame {font-size:13px}
+#board .view .subject {position:relative;padding:10px 20px;border:1px solid #e8e8e8;border-top:3px solid #666;background:#FFF;font-size:20px;font-weight:500;letter-spacing:0.5px}
+#board .view .info {position:relative;height:22px;padding:5px 0;background:#f3f3f3;box-shadow:inset 0 1px 4px #ededed;font-size:14px;border-right:1px solid #e8e8e8;border-left:1px solid #e8e8e8}
+#board .view .info .material-icons {font-size:31px;float:left;margin-right:8px;color:#325aa8;text-shadow:1px 1px #FFF}
+#board .view .info .material-icons.info_right {position:relative;bottom:-4px;font-size:14px;float:left;text-shadow:1px 1px #FFF;color:#919191;margin-right:5px}
+#board .view .info .left {float:left;padding-left:10px}
+#board .view .info .right {float:right;padding-right:10px;font-size:12px;font-family:'Verdana', sans-serif;letter-spacing:-1px}
+#board .view .info .txt {position:relative;bottom:-3px;float:left;margin-right:20px;color:#000}
+#board .view .info .txt.left {bottom:-1px;padding-left:0}
+#board .view .content {position:relative;padding:20px;background:#FFF;border:1px solid #e8e8e8;border-bottom:2px solid #e8e8e8}
+#board .view .recommend {width:799px;height:36px;position:relative;left:-20px;text-align:center;padding-top:27px;margin-top:40px}
+#board .view .recommend a {color:#FFF;padding:8px 5px 1px}
+#board .view .recommend .good {width:35px;display:inline-block;margin-right:5px;background:#5585d9;border-bottom:2px solid #3a67b5;border-radius:20px;padding:5px 3px 0 5px}
+#board .view .recommend .good:hover {background:#466fb8;border-bottom:4px solid #325087;transition-duration:0.3s}
+#board .view .recommend .good:not(:hover) {background:#5585d9;border-bottom:2px solid :#3a67b5;transition-duration:0.3s}
+#board .view .recommend .nogood {width:35px;display:inline-block;background:#e05a5a;border-bottom:2px solid #b53a3a;border-radius:20px;padding:5px 3px 0 5px}
+#board .view .recommend .nogood .material-icons {position:relative;left:-1px}
+#board .view .recommend .nogood:hover {background:#c44b4b;border-bottom:4px solid #9c3636;transition-duration:0.3s}
+#board .view .recommend .nogood:not(:hover) {background:#e05a5a;border-bottom:2px solid #b53a3a;transition-duration:0.3s}
+#board .view .recommend span:nth-child(2) {width:20px;display:inline-block;position:relative;top:-7px;margin-right:4px;font-size:11px;color:#666}
+#board .view .foot {margin-top:20px}
+#board .view .foot .left {float:left}
+#board .view .foot .right {float:right}
+#board .view .foot .btn {width:100%}
+#board .view .foot .btn_mng {width:80px;height:30px;color:#FFF;background:#e34f4f;border:1px solid #b82a2a;border-bottom-width:3px}
+#board .view .foot .btn_all {width:80px;height:30px;color:#444;background:#c9c9c9;border:1px solid #ababab;border-bottom-width:3px}
+
+#board .view .co_count {width:100%;float:left;margin:60px 7px 0}
+#board .view .co_count .txt {position:relative;top:-9px;font-size:12px}
+#board .view .co_count .txt span {color:#325aa8;font-weight:bold}
+#board .view .co_count .material-icons {font-size:24px;text-shadow:1px 1px #FFF;color:#325aa8;margin-right:2px}
+
+@keyframes move {
+	0% {opacity:0}
+	100% {opacity:1}
+}
+
+#board .view .comment {width:100%;float:left;margin-bottom:40px}
+#board .view .comment .co_list {position:relative;margin-bottom:20px;background:#FFF;font-size:14.5px}
+#board .view .comment .co_list {border:1px solid #dedede}
+#board .view .comment .co_content {height:auto;overflow:hidden;min-height:45px;padding:15px 15px 20px 1px;border-bottom:1px solid #ededed}
+#board .view .comment .co_content:hover {background:#fffef2}
+#board .view .comment .co_content.best {border-bottom-color:#a0d0da;background:#eec0c6;background:-moz-linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);background:-webkit-linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);background:linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)}
+#board .view .comment .co_content .top_best {float:right;user-select:none}
+#board .view .comment .co_content .txt_best {margin-right:5px;color:#FFF;font-size:11px;letter-spacing:-1px}
+#board .view .comment .co_content .ico_best {background:url('../img/sprites_board_ico.png') 0 -126px no-repeat;overflow:hidden;text-indent:-9999px;display:inline-block;width:21px;height:28px;float:right;margin-top:-5px;margin-right:4px}
+#board .view .comment .co_content.re {background:#f9f9f9}
+#board .view .comment .co_content .co_author {background:url('../img/sprites_board_ico.png') 0 -17px no-repeat;overflow:hidden;text-indent:-9999px;display:inline-block;width:14px;height:12px;margin-left:5px}
+#board .view .comment .material-icons.right {float:right;position:relative;bottom:-3px;font-size:14px;text-shadow:1px 1px #FFF;color:#919191;margin-right:2px}
+#board .view .comment .co_recommend {width:35px;float:left;text-align:center;color:#c3c3c3}
+#board .view .comment .co_recommend a {color:#c3c3c3}
+#board .view .comment .co_recommend .material-icons {font-size:20px;display:block}
+#board .view .comment .co_recommend .co_mid {position:relative;top:3px;font-size:13px}
+#board .view .comment .co_recommend .good {color:#466fb8;font-weight:bold}
+#board .view .comment .co_recommend .nogood {color:#e05a5a;font-weight:bold}
+#board .view .comment .co_recommend .material-icons.bottom {position:relative;top:10px}
+#board .view .comment .co_recommend .none {color:#c3c3c3}
+#board .view .comment .text_indent {width:55px;height:1px;float:left;margin-left:26px}
+#board .view .comment .text_indent .material-icons {position:relative;top:-25px;font-size:56px;color:#ececec;text-shadow:1px 1px #d2d2d2;user-select:none}
+#board .view .comment .text_id {font-size:15px;font-weight:500;color:#333}
+#board .view .comment .text_date {float:right;position:relative;bottom:-2px;color:#919191;font-family:'Verdana', sans-serif;font-size:12px;letter-spacing:-1px}
+#board .view .comment .text_content {width:746px;padding-left:35px;padding-top:5px;display:block;font-size:13px}
+#board .view .comment .text_content.re {width:699px;padding-left:82px}
+#board .view .comment .text_content .btn_co_modify_submit {width:529px;margin:10px 0 0 5px;height:35px;color:#FFF;background:#e34f4f;border:1px solid #b82a2a;border-bottom-width:3px}
+#board .view .comment .text_content .btn_co_reply_submit {width:529px;margin:10px 0 0 5px;height:35px;color:#FFF;background:#9062f5;border:1px solid #6f45cc;border-bottom-width:3px}
+#board .view .comment .btn_co_top {float:right;font-size:12px;margin-right:7px;letter-spacing:-0.5px}
+#board .view .comment .btn_co_top span:last-child {margin-right:5px}
+#board .view .comment .btn_co_top span > span {color:#919191;padding:0 2px;font-weight:500}
+#board .view .comment .btn_co_top span > span:hover {text-decoration:underline;color:#325aa8;font-weight:600;cursor:pointer}
+#board .view .comment .btn_co_top a {color:#919191;padding:0 3px;font-weight:500}
+#board .view .comment .btn_co_top a:hover {text-decoration:underline;color:#325aa8;font-weight:600}
+#board .view .comment .btn_co_cancle {width:209px;margin-top:10px;height:35px;color:#444;background:#c9c9c9;border:1px solid #ababab;border-bottom-width:3px}
+#board .view .comment .btn_co_cancle.btn_re {width:162px}
+#board .view .comment [id*="gi_"] {position:relative;margin-top:4px;animation-name:move;animation-duration:0.6s}
+#board .view .comment [id*="gi_"] textarea {width:729px;height:130px;overflow:visible;padding:10px;background:#f5f5f5}
+#board .view .comment [id*="re_gi_"] {margin-top:10px}
+
+#board .view .comment .co_paging {margin:20px 0;text-align:center}
+#board .view .comment .co_paging a {width:25px;display:inline-block;font-size:14px;letter-spacing:-1px;color:#333}
+#board .view .comment .co_paging a:hover {font-weight:bold}
+#board .view .comment .co_paging span a {font-size:20px;font-weight:bold;color:#f54245}
+#board .view .comment .co_paging .material-icons {position:relative;bottom:-7px;color:#555}
+#board .view .comment .input {margin-bottom:20px}
+#board .view .comment .input textarea {width:100%;padding:10px}
+#board .view .comment .input .btn_co_submit {width:100%;margin-top:10px;height:35px;color:#444;background:#c9c9c9;border:1px solid #ababab;border-bottom-width:3px}
+
+
+/* ============================ 갤러리 게시판 ============================ */
+#board .list.gallery {width:799px}
+#board .list.gallery .contentBox {width:192px;height:120px;margin:0 10px 80px 0;float:left}
+#board .list.gallery .contentBox.no_margin {margin-right:0}
+#board .list.gallery .contentBox img {width:100%;height:100%;box-sizing:border-box;border:1px solid #CCC;border-bottom:0;border-top-left-radius:4px;border-top-right-radius:4px}
+#board .list.gallery .contentBox .top a {font-size:13px;padding:8px;display:block;background:#FFF;border:1px solid #CCC;border-bottom:0}
+#board .list.gallery .subject .text {width:100px;color:#626dff;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#board .list.gallery .subject .ico_new {height:9px}
+#board .list.gallery .date {float:right;width:48px}
+#board .list.gallery .material-icons.gallery {position:relative;bottom:-3px;font-size:13px}
+#board .list.gallery .material-icons.gallery.padding {padding-right:3px}
+#board .list.gallery .contentBox .bottom {height:23px;background:#FFF;font-size:12px;border:1px solid #CCC;border-top:0;user-select:none}
+#board .list.gallery .contentBox .nick {width:75px;line-height:16px;padding-left:8px;color:#444}
+#board .list.gallery .contentBox .bottom .right {float:right;padding-right:13px;font-family:'tahoma';font-size:8pt;color:#777}
+#board .list.gallery .contentBox .bottom .right .co_count {margin-right:5px}
+#board .list.gallery .contentBox .bottom .right .co_recommend {margin-right:5px}
+#board .list.gallery .foot {clear:both;margin-top:220px}
+#board .list.gallery .paging {clear:both}
+#board .list.gallery .empty_table {font-size:15px;color:#777}
