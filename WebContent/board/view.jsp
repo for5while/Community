@@ -83,6 +83,7 @@ int commentAllCount = bdao.getCommentCount(id, table);
 				SimpleDateFormat date2 = new SimpleDateFormat("HH:mm");
 				String date3 = null;
 				
+				// 글 작성일시가 오늘이라면 시간으로 출력하고 아니면 날짜로 출력
 				if(date1.format(bb.getDatetime()).equals(date1.format(now))) {
 					date3 = date2.format(bb.getDatetime());
 				} else {
