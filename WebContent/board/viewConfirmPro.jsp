@@ -37,6 +37,7 @@
 			BoardDAO bdao = BoardDAO.getInstance();
 			BoardBean getWrite = bdao.getWrite(table, id);
 			
+			// 해당 게시글의 비밀번호가 일치하지 않을 때
 			if(!password.equals(getWrite.getPassword())) {
 				out.print("<script type='text/javascript'>");
 				out.print("alert('비밀번호가 틀렸습니다.');");
@@ -45,7 +46,7 @@
 				return;
 			}
 			
-			// 이 글번호 세션값이 없으면 글 비밀번호 확인 페이지 보임
+			// view 페이지에서 이 세션으로 저장 되어있으면 비밀번호 질의 없이 바로 글을 볼 수 있도록 위함
 			session.setAttribute("secretTable", table);
 			session.setAttribute("secretID", id);
 

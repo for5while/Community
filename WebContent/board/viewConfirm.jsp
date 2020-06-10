@@ -6,7 +6,6 @@
     pageEncoding="UTF-8"%>
 
 <jsp:include page="../main/head.jsp" />
-<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
 <%
 String memberID = null;
@@ -38,7 +37,7 @@ if(memberID != null) {
 		response.sendRedirect("../board/view.jsp?table=" + table + "&id=" + id);
 		return;
 	}
-} else { // 다른걸로 고쳐야지
+} else {
 	out.print("<script type='text/javascript'>");
 	out.print("alert('비밀글은 회원만 볼 수 있습니다.');");
 	out.print("location.href = '../member/login.jsp';");
@@ -65,7 +64,7 @@ if(memberID != null) {
 		<script type="text/javascript">
 			function view_confirm_submit() {
 				if(!vc.password.value) {
-					alert("비밀번호를 입력해주세요.");
+					alert("게시글의 비밀번호를 입력해주세요.");
 					vc.password.focus();
 					return false;
 				}
