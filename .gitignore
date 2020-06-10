@@ -34,3 +34,4 @@ src/util/
 src/util/
 WebContent/META-INF/
 WebContent/data/
+WebContent/member/emailSendPro.jsp
