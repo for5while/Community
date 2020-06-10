@@ -52,8 +52,8 @@ int list8Size = list8.size();
 			</div>
 			<span></span>
 		</div>
-		<div class="banner_1"><a href="javascript:alert('1번 배너');"><img src="../img/banner_1.png"></a></div>
-		<div class="banner_2"><a href="javascript:alert('2번 배너');"><img src="../img/banner_2.png"></a></div>
+		<div class="banner_1 banner_common"><a href="javascript:alert('1번 배너');"><img src="../img/banner_1.png"></a></div>
+		<div class="banner_2 banner_common"><a href="javascript:alert('2번 배너');"><img src="../img/banner_2.png"></a></div>
 	</div>
 	<div class="latest margin_left none_margin_right">
 		<div class="subject_board"><a href="../board/list.jsp?table=free">자유게시판</a></div>
@@ -66,8 +66,8 @@ int list8Size = list8.size();
 			<% } %>
 		</ul>
 	</div>
-	<div class="banner_3"><a href="javascript:alert('3번 배너');"><img src="../img/banner_3.gif" title="사이트 이용 규정 바로가기"></a></div>
-	<div class="banner_4"><a href="javascript:alert('4번 배너');"><img src="../img/banner_4.png" title="직업훈련학원 검색"></a></div>
+	<div class="banner_3 banner_common"><a href="javascript:alert('3번 배너');"><img src="../img/banner_3.gif" title="사이트 이용 규정 바로가기"></a></div>
+	<div class="banner_4 banner_common"><a href="javascript:alert('4번 배너');"><img src="../img/banner_4.png" title="직업훈련학원 검색"></a></div>
 	<div class="latest margin_top">
 		<div class="subject_board"><a href="../board/list.jsp?table=infocom">정보통신</a></div>
 		<ul>

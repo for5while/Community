@@ -16,13 +16,13 @@ input[type="text"],
 input[type="password"],
 textarea {font-family:'Noto Sans KR', sans-serif;border:1px solid #b5b5b5;border-right-color:#d4d4d4;border-bottom-color:#d4d4d4}
 input[type="button"],
-input[type="submit"] {width:100px;outline:none;cursor:pointer;font-family:'Noto Sans KR', sans-serif;}
+input[type="submit"] {width:100px;outline:none;cursor:pointer;font-family:'Noto Sans KR', sans-serif}
 button {cursor:pointer;outline:none}
 
 .division_bar {position:relative;top:-1px;font-size:10px;margin:0 7px;color:#c3c3c3;user-select:none}
 
 #guide {margin:15px 0;padding:20px;background:#FFF;border:1px solid #DDD;user-select:none}
-#guide .word {font-size:13px;font-weight:bold;padding-left:20px;background:url('../img/sprites_guide.gif') 0 -27px no-repeat }
+#guide .word {font-size:13px;font-weight:bold;padding-left:20px;background:url(../img/sprites_guide.gif) 0 -27px no-repeat }
 #guide ul {padding-top:8px}
 #guide li {padding-left:20px;line-height:18px;font-family:Dotum,'돋움',sans-serif;font-size:11px;letter-spacing:-1px;color:#999;background:url(../img/sprites_guide.gif) 10px -6px no-repeat}
 #guide li span {color:#ff6565}
@@ -56,7 +56,7 @@ button {cursor:pointer;outline:none}
 #modify .link span {vertical-align:top;margin:0 7px;color:#CCC;font-size:12px;cursor:default}
 #modify .inp_zip {width:250px !important}
 #modify .btn_zip {color:#444;height:41px !important;padding-top:2px;background:#c9c9c9;border:1px solid #ababab;border-bottom:2px solid #ababab}
-#modify .btn_submit {width:350px !important;margin-top:10px;color:#FFF;font-weight:bold;font-size:16px;background:#9062f5;border:1px solid #6f45cc;border-bottom:3px solid #6f45cc}
+#modify .btn_submit {width:372px !important;margin-top:10px;color:#FFF;font-weight:bold;font-size:16px;background:#9062f5;border:1px solid #6f45cc;border-bottom:3px solid #6f45cc}
 #modify .write_info span:first-child {color:#626dff}
 #modify .write_info span:last-child {width:270px;height:20px;color:#333;text-align:left;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #modify .write_info .division_bar {top:-2px}
@@ -125,14 +125,15 @@ button {cursor:pointer;outline:none}
 #index .latest li a .ico_new {background:url(../img/sprites_board_ico.png) no-repeat;width:16px;height:8px;display:inline-block;margin-left:6px}
 #index .latest li a .txt_date {width:35px;line-height:21px;float:right;font-family:'tahoma';font-size:8pt;color:#777}
 #index .talk_area {position:relative;width:262px;height:23px;float:left;margin-top:15px}
-#index .talk_area .talk {width:261px;height:18px;background:url('../img/sprites_talk.gif') no-repeat;padding:2px 1px 2px 0}
+#index .talk_area .talk {width:261px;height:18px;background:url(../img/sprites_talk.gif) no-repeat;padding:2px 1px 2px 0}
 #index .talk_area .talk .rolling {position:relative;float:left;width:230px;height:14px;margin:3px 0 3px 8px;overflow:hidden}
 #index .talk_area .talk .rolling ul {position:absolute;top:0px}
 #index .talk_area .talk .rolling ul li {height:14px}
 #index .talk_area .talk .rolling ul li a {float:left;height:14px;line-height:13px;font-size:11px;letter-spacing:-1px;color:#fff}
-#index .talk_area .talk span {position:absolute;top:-15px;left:0px;display:block;width:22px;height:15px;background: url('../img/sprites_talk.gif') no-repeat -267px 0}
-#index .banner_1 {float:left;margin-top:5px;width:126px;height:184px;background:#FFF;border:1px solid #8c92b1;margin-right:6px;border-bottom-left-radius:5px}
-#index .banner_2 {float:left;margin-top:5px;width:126px;height:184px;background:#FFF;border:1px solid #212121;border-bottom-right-radius:5px}
-#index .banner_3 {float:left;margin-top:15px;width:394px;height:100px;background:#FFF;border:1px solid #efdddf;margin-right:6px}
-#index .banner_4 {float:left;margin-top:15px;width:394px;height:100px;background:#FFF;border:1px solid #47a6b3}
+#index .talk_area .talk span {position:absolute;top:-15px;left:0px;display:block;width:22px;height:15px;background: url(../img/sprites_talk.gif) no-repeat -267px 0}
+#index .banner_common {float:left;background:#FFF}
+#index .banner_1 {margin-top:5px;width:126px;height:184px;border:1px solid #8c92b1;margin-right:6px;border-bottom-left-radius:5px}
+#index .banner_2 {margin-top:5px;width:126px;height:184px;border:1px solid #212121;border-bottom-right-radius:5px}
+#index .banner_3 {margin-top:15px;width:394px;height:100px;border:1px solid #efdddf;margin-right:6px}
+#index .banner_4 {margin-top:15px;width:394px;height:100px;border:1px solid #47a6b3}
 #index #guide {display:inline-block;width:100%;box-sizing:border-box}

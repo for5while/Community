@@ -6,7 +6,7 @@ input:focus {outline:dashed 1px #888}
 input[type="text"],
 input[type="password"] {font-family:'Noto Sans KR', sans-serif;width:350px;height:23px;padding:10px;border:1px solid #b5b5b5;border-right-color:#d4d4d4;border-bottom-color:#d4d4d4}
 input[type="button"],
-input[type="submit"] {width:100px;height:45px;outline:none;cursor:pointer;font-family:'Noto Sans KR', sans-serif;}
+input[type="submit"] {width:100px;height:45px;outline:none;cursor:pointer;font-family:'Noto Sans KR', sans-serif}
 
 @keyframes move {
 	0% {left:0}
